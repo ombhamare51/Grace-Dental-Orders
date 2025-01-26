@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gdl.Grace.Dental.Orders.Entity.Doctor_Registration_Entity;
-import com.gdl.Grace.Dental.Orders.Service.Doctor_Resistration_Service;
+import com.gdl.Grace.Dental.Orders.Service.Doctor_Registration_Service;
 
 @RestController
 public class Doctor_Registration_Controller {
 	
 	@Autowired
-	Doctor_Resistration_Service service;
+	private Doctor_Registration_Service service;
 
 	@PostMapping("/doctor_register")
 	public String InsertData(@RequestBody Doctor_Registration_Entity d) {
