@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Doctor_Registration_Entity {
+public class Doctor {
 
 	@Id
 	private String clinic_name;
@@ -12,6 +12,19 @@ public class Doctor_Registration_Entity {
 	private String email;
 	private String password;
 	private String confirm_password;
+
+	public Doctor() {
+
+	}
+
+	public Doctor(String clinic_name, String dr_name, String email, String password, String confirm_password) {
+		super();
+		this.clinic_name = clinic_name;
+		this.dr_name = dr_name;
+		this.email = email;
+		this.password = password;
+		this.confirm_password = confirm_password;
+	}
 
 	public String getClinic_name() {
 		return clinic_name;
@@ -58,19 +71,4 @@ public class Doctor_Registration_Entity {
 		return "Doctor_Registration_Entity [clinic_name=" + clinic_name + ", dr_name=" + dr_name + ", email=" + email
 				+ ", password=" + password + ", confirm_password=" + confirm_password + "]";
 	}
-
-	public Doctor_Registration_Entity(String clinic_name, String dr_name, String email, String password,
-			String confirm_password) {
-		super();
-		this.clinic_name = clinic_name;
-		this.dr_name = dr_name;
-		this.email = email;
-		this.password = password;
-		this.confirm_password = confirm_password;
-	}
-
-	public Doctor_Registration_Entity() {
-
-	}
-
 }

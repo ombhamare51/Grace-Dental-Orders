@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class LabAdm_Register_Entity {
+public class LabAdmin {
 
 	@Id
 	private String admin_name;
@@ -12,12 +12,12 @@ public class LabAdm_Register_Entity {
 	private String password;
 	private String confirm_password;
 
-	public LabAdm_Register_Entity() {
-		super();
+	public LabAdmin() {
+		
 	}
 	
 
-	public LabAdm_Register_Entity(String admin_name, String email, String password, String confirm_password) {
+	public LabAdmin(String admin_name, String email, String password, String confirm_password) {
 		super();
 		this.admin_name = admin_name;
 		this.email = email;
