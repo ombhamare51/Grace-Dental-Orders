@@ -20,24 +20,35 @@ public class Doctor_Dao {
 		Session ss = null;
 		Transaction tx = null;
 		String msg = null;
+
 		try {
 			ss = sf.openSession();
 			tx = ss.beginTransaction();
-			ss.persist(dr);
-			tx.commit();
-			msg = "Account created";
+
+			String hql = "from Doctor where email = :email";
+			Query<Doctor> query = ss.createQuery(hql, Doctor.class);
+			query.setParameter("email", dr.getEmail());
+
+			Doctor existingDoctor = (Doctor) query.uniqueResult();
+
+			if (existingDoctor != null) {
+				msg = "Account already exists";
+			} 
+			else 
+			{
+				ss.persist(dr);
+				tx.commit();
+				msg = "Account created";
+			}
 
 		} catch (Exception e) {
-
 			if (tx != null) {
 				tx.rollback();
 			}
-
 			e.printStackTrace();
-			msg = "Error occured while creating the account please try again";
+			msg = "Error occurred while creating the account, please try again";
 		} finally {
 			if (ss != null) {
-
 				ss.close();
 			}
 		}
@@ -60,7 +71,7 @@ public class Doctor_Dao {
 
 			doctor = query.uniqueResult();
 			tx.commit();
-			
+
 		} catch (Exception ex) {
 			if (tx != null) {
 				tx.rollback();
