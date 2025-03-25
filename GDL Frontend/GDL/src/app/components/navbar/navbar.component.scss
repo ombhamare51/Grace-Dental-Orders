@@ -1,0 +1,27 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #0077B6; // Dental Blue
+  color: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+nav a {
+  color: white;  
+  font-weight: 500;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #64B5F6; // Light blue hover effect
+}

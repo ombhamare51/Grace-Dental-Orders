@@ -1,0 +1,87 @@
+// Define color variables for a clean dental theme
+$primary-color: #0078d4; // Dental Blue
+$background-color: #f5faff; // Soft White Blue
+$card-bg: #ffffff; // White
+$border-color: #cccccc;
+$input-focus: #0078d4;
+$text-color: #333;
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+
+  .login-card {
+    background: $card-bg;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+
+    h2 {
+      color: $primary-color;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      
+      label {
+        text-align: left;
+        font-size: 14px;
+        color: $text-color;
+        margin-bottom: 5px;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: all 0.3s;
+
+        &:focus {
+          outline: none;
+          border-color: $input-focus;
+          box-shadow: 0px 0px 5px rgba(0, 120, 212, 0.5);
+        }
+      }
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+
+    .signup-text {
+      margin-top: 10px;
+      font-size: 14px;
+
+      a {
+        color: $primary-color;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

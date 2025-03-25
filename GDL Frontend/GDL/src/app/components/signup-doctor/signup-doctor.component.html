@@ -1,0 +1,38 @@
+<div class="signup-container">
+  <div class="signup-card">
+    <h2>Doctor Signup</h2>
+
+    <form (submit)="onSignup()">
+      <div class="input-group">
+        <label for="dr_name">Doctor Name*</label>
+        <input id="dr_name" type="text" [(ngModel)]="doctor.dr_name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="clinic_name">Clinic Name*</label>
+        <input id="clinic_name" type="text" [(ngModel)]="doctor.clinic_name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email*</label>
+        <input id="email" type="email" [(ngModel)]="doctor.email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password*</label>
+        <input id="password" type="password" [(ngModel)]="doctor.password" required />
+      </div>
+
+      <div class="input-group">
+        <label for="confirm_password">Confirm Password*</label>
+        <input id="confirm_password" type="password" [(ngModel)]="doctor.confirm_password" required />
+      </div>
+
+      <button class="signup-btn" type="submit">Signup</button>
+    </form>
+
+    <div class="login-text">
+      Already have an account? <a routerLink="/login">Login Here</a>
+    </div>
+  </div>
+</div>

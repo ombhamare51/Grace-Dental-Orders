@@ -1,0 +1,87 @@
+
+.about-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 40px 0; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0074cc; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #0074cc;
+  margin: 20px 0; 
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Mission Section */
+.mission-section {
+  margin-top: -10px; 
+}
+
+.mission-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Why Choose Us Section */
+.choose-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px; 
+}
+
+.choose-card {
+  background: #fff;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Expertise Section */
+.expertise-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px; 
+}
+
+.expertise-card {
+  background: #fff;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Partner Section */
+.partner-section {
+  margin-top: 25px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}

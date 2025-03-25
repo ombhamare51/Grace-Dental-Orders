@@ -1,0 +1,24 @@
+<div class="login-container">
+  <div class="login-card">
+      <h2>Login</h2>
+
+      <form (ngSubmit)="onLogin()">
+          <div class="input-group">
+              <label for="email">Email*</label>
+              <input id="email" type="email" [(ngModel)]="email" name="email" required />
+          </div>
+
+          <div class="input-group">
+              <label for="password">Password*</label>
+              <input id="password" type="password" [(ngModel)]="password" name="password" required />
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+
+          <p class="signup-text">
+              Don't have an account? 
+              <a (click)="openSignupDialog()">Create Account Here</a>
+          </p>
+      </form>
+  </div>
+</div>

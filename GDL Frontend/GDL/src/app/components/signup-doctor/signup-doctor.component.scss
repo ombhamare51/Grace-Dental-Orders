@@ -1,0 +1,21 @@
+@import '../login/login.component.scss'; // Reuse styles from login page
+
+.signup-container {
+  @extend .login-container; // Use the same layout as login
+}
+
+.signup-card {
+  @extend .login-card; // Use the same card design
+
+  h2 {
+    color: $primary-color;
+  }
+
+  .signup-btn {
+    @extend .login-btn; // Use the same button styling
+  }
+
+  .login-text {
+    @extend .signup-text;
+  }
+}

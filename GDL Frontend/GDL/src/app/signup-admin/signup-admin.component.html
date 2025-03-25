@@ -1,0 +1,39 @@
+<div class="signup-container">
+    <div class="signup-card">
+      <h2>Admin Signup</h2>
+  
+      <form (submit)="onSignup()">
+        <div class="input-group">
+          <label for="admin_id">Admin ID*</label>
+          <input id="admin_id" type="text" [(ngModel)]="admin.admin_id" required />
+        </div>
+  
+        <div class="input-group">
+          <label for="admin_name">Admin Name*</label>
+          <input id="admin_name" type="text" [(ngModel)]="admin.admin_name" required />
+        </div>
+  
+        <div class="input-group">
+          <label for="email">Email*</label>
+          <input id="email" type="email" [(ngModel)]="admin.email" required />
+        </div>
+  
+        <div class="input-group">
+          <label for="password">Password*</label>
+          <input id="password" type="password" [(ngModel)]="admin.password" required />
+        </div>
+  
+        <div class="input-group">
+          <label for="confirm_password">Confirm Password*</label>
+          <input id="confirm_password" type="password" [(ngModel)]="admin.confirm_password" required />
+        </div>
+  
+        <button class="signup-btn" type="submit">Signup</button>
+      </form>
+  
+      <div class="login-text">
+        Already have an account? <a routerLink="/login">Login Here</a>
+      </div>
+    </div>
+  </div>
+  

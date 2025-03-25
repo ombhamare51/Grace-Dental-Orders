@@ -1,0 +1,64 @@
+/* ✅ General Page Styling */
+body {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Professional & Clean Navbar */
+mat-toolbar {
+  background-color: #0077B6 !important; /* Dental Blue */
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* ✅ Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ✅ Card Styling */
+.card {
+  background-color: #ffffff; /* White Cards */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Headings */
+h1 {
+  color: #0077B6; /* Dental Blue */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 22px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  h1 {
+      font-size: 24px;
+  }
+}
